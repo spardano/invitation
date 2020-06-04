@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="bgheader">
+
+    </div>
+
+    <div class="container">
+        <div class="boxheader row mx-auto">
+
+        <div class="bride col-md">
+            <img src="assets/img/bride.jpg" class="rounded-circle" alt="">
+            <h3>Yuolin Dita Humaria, S.T</h3>
+            <p>Anak Dari <br> Zulhayati & Wahidul Kahar</p>
+        </div>
+
+        <div class="invitation col-md">
+            <img src="assets/img/ring.png" class="rounded-circle" alt="">
+            <h3>You Are Invited To Our <br /> Wedding Party</h3>
+        </div>
+
+        <div class="groom col-md">
+            <img src="assets/img/groom.jpg" class="rounded-circle" alt="">
+            <h3>Wawan Ariessandi, S.T</h3>
+            <p>Anak Dari <br> Zulhayati & Wahidul Kahar</p>
+        </div>
+
+        </div>
+
+    </div>
+
+        <section id="timeplace">
+            <div class="judul">
+                <h1>Time And Place</h1>
+                <hr>
+            </div>
+            <div class="row mt-5">
+                <div class="time col-md-4 mx-auto">
+                    <h1>Time</h1>
+                    <p>Monday, 27th August 2020 <br> 08:00 Am Until 5:00 Pm </p>
+
+                    <p id="hitungmundur"></p>
+                </div>
+                <div class="place col-md-4 mx-auto">
+                    <h1>Place</h1>
+                    <p>Jl. Garuda Sakti, Km.2, Kec. Tampan, Kel. Tampan, Panam Pekanbaru </p>
+                    
+                        <button class="btn mx-auto">Lihat Peta</button>
+                    
+                </div>
+            </div>
+       
+            <div class="judul">
+                <h1>Would You Come ?</h1>
+                <hr>
+            </div>
+
+            <div class="container">
+                <div class="col-md-4 mx-auto">
+                    <button class="btn btn-primary mx-auto">Yes I will</button>
+                    <button class="btn btn-warning mx-auto">I'm Not Sure</button>
+                    <button class="btn btn-danger mx-auto">I Can Not</button>
+                </div>
+            </div>
+        </section>
+    
+
+    
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+
+   // Set the date we're counting down to
+var countDownDate = new Date("Aug 27, 2020 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("hitungmundur").innerHTML = days + " : " + hours + " : "
+  + minutes + " : " + seconds;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("hitungmundur").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
+
+</body>
+</html>
