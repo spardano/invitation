@@ -1,40 +1,95 @@
+.motion {
+  background-image: url("../img/bgheader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #676262;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.isi {
+  margin-top: 80px;
+}
+
+.motion h1,
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+}
+
+.motion h3 {
+  color: #e1ab5b;
+}
+
+.motion button {
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: unset;
+  border: 5px solid #e1ab5b;
+  color: #676262;
+}
+
+.motion button:hover {
+  background-color: #e1ab5b;
+  color: white;
+}
+
 .bgheader {
-    width: 100%;
-    height: 447px;
-    background-image: url("../img/bgheader.png");
-    background-size: cover;
+  width: 100%;
+  height: 447px;
+  background-image: url("../img/bgheader.png");
+  background-size: cover;
 }
 
-.container .boxheader{
-    position: relative;
-    margin-top: -250px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #FEF2F2; 
+.container .boxheader {
+  position: relative;
+  margin-top: -250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fef2f2;
+  min-height: 300px;
 }
 
-.boxheader:before, .boxheader:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width:300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+.pengantar img {
+  width: 300px;
 }
 
-.boxheader:after
-{
+.pengantar h1 {
+  font-family: "Dancing Script", cursive;
+  color: #676262;
+}
+
+.pengantar p {
+  font-family: "Alata", sans-serif;
+  color: #676262;
+}
+
+.boxheader:before,
+.boxheader:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.boxheader:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -o-transform: rotate(3deg);
@@ -44,87 +99,80 @@
   left: auto;
 }
 
-.bride img, .groom img {
-    width: 211px;
-    height: 211px;
+section {
+  min-height: 600px;
 }
 
-.bride, .groom, .invitation {
-    text-align: center;
-
+.judul h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 
-.bride h3, .groom h3, .invitation h3 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-    color: #676262;
-}
-
-.bride p, .groom p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 18px;
-    color: #676262;
-}
-
-.judul h1{
-    margin-top: 30px;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-}
-
-.judul hr {
-    border: 0;
-    height: 1px;
-    width: 400px;
-    background-image: linear-gradient(to right, rgba(56, 56, 56, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+hr {
+  border: 0;
+  height: 1px;
+  width: 400px;
+  background-image: linear-gradient(
+    to right,
+    rgba(56, 56, 56, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 #timeplace {
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
-    margin-top: 30px;
-    background-image: url(../img/bgsec1.jpg) ;
-    background-size: cover top center;
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  background-image: url(../img/bgsec1.jpg);
+  background-size: cover top center;
 }
 
-#timeplace .time, #timeplace .place {
-    width: 503px;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    background-color: #FEF2F2;
+#timeplace .time,
+#timeplace .place {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #fef2f2;
 }
 
-
-
-#timeplace .time h1, #timeplace .place h1 {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    color:#E1AB5B;
+#timeplace .time h1,
+#timeplace .place h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: #e1ab5b;
 }
 
 #timeplace p {
-    margin-top: 20px;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 24px;
-    color: #676262;
-    text-align: center;
+  margin-top: 20px;
+  font-family: "Alata", sans-serif;
+  font-size: 24px;
+  color: #676262;
+  text-align: center;
 }
 
 #timeplace #hitungmundur {
-    margin-top:10px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 36px;
-    color:#E1AB5B;
+  margin-top: 10px;
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  color: #e1ab5b;
 }
 
 #timeplace .place button {
-    margin-top: 10px;
-    left: 25%;
-    width:250px;
-    background-color: #90BDE7;
-    color: white;
+  margin-top: 10px;
+  left: 25%;
+  width: 250px;
+  background-color: #90bde7;
+  color: white;
 }
 
+#timeplace i {
+  color: #e1ab5b;
+}
 
+#note {
+  font-family: "Alata", sans-serif;
+  color: #676262;
+}
