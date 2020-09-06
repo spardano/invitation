@@ -167,6 +167,11 @@ hr {
   text-align: center;
 }
 
+#timeplace .label {
+  color: #8d8585;
+  font-size: 20px;
+}
+
 #timeplace #hitungmundur {
   margin-top: 10px;
   font-family: "Dancing Script", cursive;
