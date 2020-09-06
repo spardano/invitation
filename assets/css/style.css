@@ -109,6 +109,20 @@ section {
   font-family: "Dancing Script", cursive;
 }
 
+.pengantin {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.nama h1 {
+  font-family: "Dancing Script", cursive;
+  color: #797676;
+}
+
+.nama p {
+  font-family: "Dancing Script", cursive;
+}
+
 hr {
   border: 0;
   height: 1px;
