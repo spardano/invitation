@@ -1,5 +1,5 @@
 .motion {
-  background-image: url("../img/bgheader.png");
+  background-image: url("../img/pantai.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #676262;
@@ -17,17 +17,24 @@
 h2 {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+.motion h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
 }
 
 .motion h2 {
-  color: #e1ab5b;
+  font-size: 40px;
+  color: rgb(226, 225, 225);
 }
 
 .motion button {
   font-family: "Alata", sans-serif;
   font-size: 20px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: unset;
   border: 5px solid #e1ab5b;
   color: #676262;
@@ -38,11 +45,20 @@ h2 {
   color: white;
 }
 
+.walimatul {
+  border: solid 3px #e1ab5b;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
 .bgheader {
   width: 100%;
   height: 447px;
-  background-image: url("../img/bgheader.png");
+  background-image: url("../img/pantai.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
 }
 
 .container .boxheader {
@@ -50,22 +66,26 @@ h2 {
   margin-top: -250px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #fef2f2;
+  background-image: linear-gradient(40deg, #fcd3d3, #d3fcfc);
   min-height: 300px;
 }
 
 .pengantar img {
-  width: 300px;
+  width: 200px;
+  opacity: 0.6;
+  margin-bottom: 50px;
 }
 
 .pengantar h1 {
   font-family: "Dancing Script", cursive;
-  color: #676262;
+  font-size: 50px;
+  color: #f0b762;
 }
 
 .pengantar p {
   font-family: "Alata", sans-serif;
   color: #676262;
+  line-height: 25pt;
 }
 
 .boxheader:before,
@@ -110,8 +130,13 @@ section {
 }
 
 .pengantin {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.pengantin img {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .nama h1 {
@@ -121,6 +146,7 @@ section {
 
 .nama p {
   font-family: "Dancing Script", cursive;
+  font-size: 20px;
 }
 
 hr {
@@ -137,7 +163,6 @@ hr {
 
 #timeplace {
   width: 100%;
-  padding: 20px;
   margin-top: 30px;
   background-image: url(../img/bgsec1.jpg);
   background-size: cover top center;
@@ -146,9 +171,8 @@ hr {
 
 #timeplace .time,
 #timeplace .place {
+  padding: 40px;
   margin-top: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
   background-color: #fef2f2;
 }
 
@@ -162,14 +186,13 @@ hr {
 #timeplace p {
   margin-top: 20px;
   font-family: "Alata", sans-serif;
-  font-size: 24px;
   color: #676262;
   text-align: center;
 }
 
 #timeplace .label {
   color: #8d8585;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #timeplace #hitungmundur {
@@ -194,4 +217,5 @@ hr {
 #note {
   font-family: "Alata", sans-serif;
   color: #676262;
+  margin-top: 50px;
 }
